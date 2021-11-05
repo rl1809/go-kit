@@ -1,0 +1,10 @@
+version: "1"
+packages:
+  - name: "mysql"
+    path: "database/mysql"
+    queries: "./database/mysql/query/"
+    schema: "./database/mysql/migration/"
+    engine: "mysql"
+    emit_interface: True
+    output_querier_file_name: "query.go"
+    
